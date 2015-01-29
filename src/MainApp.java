@@ -127,6 +127,9 @@ public class MainApp extends Application {
         flipHorizontalItem.setOnAction(event -> {
             flipHorizontally();
         });
+        rotateClockwiseItem.setOnAction(event -> {
+            rotateClockwise();
+        });
 
         root.setTop(menuBar);
     }
@@ -259,6 +262,18 @@ public class MainApp extends Application {
 
         imageView.setImage(writableImage);
     }
+
+    private void rotateClockwise() {
+        //create a new writable image, exchanging the width and height dimensions of the original writableImage.
+        WritableImage newWritableImage = new WritableImage((int)writableImage.getHeight(), (int)writableImage.getWidth());
+
+
+        // loop through and rotate pixels
+
+        writableImage = newWritableImage;
+        imageView.setImage(writableImage);
+    }
+
 
     public static void main(String[] args) {
         launch(args);
