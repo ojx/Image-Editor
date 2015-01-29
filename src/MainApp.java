@@ -179,7 +179,7 @@ public class MainApp extends Application {
         pixelWriter = writableImage.getPixelWriter();
     }
 
-    //Save the current writable Image in pPNG format
+    //Save the current writable Image in PNG format
     public void saveImage() {
         FileChooser fc = new FileChooser();
         fc.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Image Files", "*.png"));
@@ -191,7 +191,7 @@ public class MainApp extends Application {
     }
 
 
-    //Oopen an image file from local drives
+    //Open an image file from local drives
     private void openFile() {
         FileChooser fc = new FileChooser();
         fc.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Image Files", "*.jpg", "*.png"));
@@ -217,7 +217,7 @@ public class MainApp extends Application {
         System.exit(0);
     }
 
-    //apply the saturtate method to each pixel in the current twriateble image
+    //apply the saturate method to each pixel in the current writable image
     private void saturate() {
         for (int x = 0; x < writableImage.getWidth(); x++) {
             for (int y = 0; y < writableImage.getHeight(); y++) {
