@@ -1,0 +1,12 @@
+BorderPane {
+    -fx-background-color: linear-gradient(to bottom right, darkgray, darkslategray);
+}
+
+StackPane {
+    -fx-alignment: bottom-center;
+}
+
+Slider {
+    -fx-background-color: lightsteelblue;
+    -fx-text-fill: white;
+}
