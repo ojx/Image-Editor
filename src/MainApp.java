@@ -271,6 +271,7 @@ public class MainApp extends Application {
         // loop through and rotate pixels
 
         writableImage = newWritableImage;
+        pixelReader = writableImage.getPixelReader();
         imageView.setImage(writableImage);
     }
 
